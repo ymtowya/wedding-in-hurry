@@ -187,7 +187,7 @@ void main()
 					{
 						LEDDZ_COL_PORT = gled_col[i]; // col
 						hc595_write_data(gled_row[i]); // row
-						delay_10us(200);
+						delay_10us(400);
 						hc595_write_data(0x00);	
 					}
 				}else{			
