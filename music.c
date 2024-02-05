@@ -73,10 +73,11 @@ unsigned char freq_select;
 unsigned char PLAY_FLAG;
 
 // Notes frequency table
-const unsigned int code freq_table[] = {0,61714 ,61928 ,62131 ,62322 ,62502 ,62673 ,62833 ,62985 ,63128 ,63263 ,63391 ,63511 //µÕ“Ù
-	                         ,63628 ,63731 ,63835 ,63928 ,64021 ,64103 ,64185 ,64260 ,64331 ,64400 ,64463 ,64524 //÷–“Ù
-                                 ,64580 ,64633 ,64684 ,64732 ,64777 ,64820 ,64860 ,64898 ,64934 ,64968 ,65000 ,65030 //∏ﬂ“Ù
-	                        };															 
+const unsigned int code freq_table[] = {0,61714 ,61928 ,62131 ,62322 ,62502 ,62673 ,62833 ,62985 ,63128 ,63263 ,63391 ,63511,
+						63628 ,63731 ,63835 ,63928 ,64021 ,64103 ,64185 ,64260 ,64331 ,64400 ,64463 ,64524,
+						64580 ,64633 ,64684 ,64732 ,64777 ,64820 ,64860 ,64898 ,64934 ,64968 ,65000 ,65030,
+						};
+															 
 // Wedding song
 // music sheet
 unsigned char code melody[] = {0, M5, H1, H1, H1, 0, M5, H2, M7, H1, 0,
@@ -123,9 +124,9 @@ void delay_10us(unsigned int ten_us)
 
 void buzzerInterrupt() interrupt 1	// buzzer interrupt
 {
-	beepIO = !beepIO;   // buzzer IO switch
-	TH0 = freq_table[freq_select]/256 ;
-	TL0 = freq_table[freq_select]%256 ;
+	beepIO = !beepIO; // buzzer IO switch
+	TH0 = freq_table[freq_select] / 256 ;
+	TL0 = freq_table[freq_select] % 256 ;
 }
 
 void keyInterrupt() interrupt 2 // key interrupt
