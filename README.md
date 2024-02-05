@@ -4,7 +4,7 @@ This is just a small funny project that I prepared for my friend, who happened t
 
 #### Demo video
 
-link
+[click here](https://youtu.be/2ABvQjZ1vFM)
 
 #### Set up
 
