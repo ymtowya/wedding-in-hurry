@@ -1,6 +1,6 @@
 ### Emergent Wedding
 
-This is just a small funny project that I prepared for my friend, who happened to marry in a hurry. (Congrats anyway) Since there was not much preparation time, this project can run on MCU to play the _wedding song_ and show lovely heart beat on the LED lights, as an emergency fix to the sudden marriage.
+This is just a small funny project that I prepared for my friend, who happened to marry in a hurry. (Congrats anyway) Since there was not much preparation time, this project can run on MCU to play the _wedding song_ and show lovely heart beat on the LED lights (align with the rhythm), as an emergency fix to the sudden marriage.
 
 #### Demo video
 
@@ -17,5 +17,4 @@ link
 
 #### Tech stack
 
-* I used interrupt to play the sond while monitor the keys being pressed
-* serial input for LED to display
+* I used interrupt scheme to play the song while monitor the keys being pressed
